@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momentun - Tutorial</title>
+
+    <link rel="stylesheet" href="/css/main.css" />
+  </head>
+
+  <body>
+    <div class="container weather-container">
+      <div id="weather">
+        <div class="row">
+          <div class="weather-status">
+            <span></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="weather-temp-loc">
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container clock-container">
+      <h2 id="clock">00:00</h2>
+    </div>
+
+    <div class="container login-container">
+      <div class="row">
+        <div class="col-50">
+          <h1 class="login-prompt">What is your name?</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <form id="login-form" class="hidden">
+            <input
+              required
+              maxlength="15"
+              type="text"
+              name="Login_name"
+              id=""
+              placeholder="What is your name?"
+            />
+            <!-- <button>Log In</button> -->
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <h1 class="hidden" id="greeting"></h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="container todo-container">
+      <div class="row">
+        <div class="col-50">
+          <h3 class="todo-text">What do you want to achieve today?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <form action="" id="js-todo-form">
+            <input
+              type="text"
+              name=""
+              id=""
+              placeholder="Write a To Do and press Enter."
+              required
+            />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-50">
+          <ul id="js-todo-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container quote-container">
+      <div class="row">
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Javascript -->
+    <script src="/js/greetings.js"></script>
+    <script src="/js/clock.js"></script>
+    <script src="/js/quotes.js"></script>
+    <script src="/js/background.js"></script>
+    <script src="/js/todo.js"></script>
+    <script src="/js/weather.js"></script>
+  </body>
+</html>

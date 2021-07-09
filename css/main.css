@@ -1,0 +1,168 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans KR", sans-serif;
+  text-rendering: optimizeSpeed;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row * {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+.row :after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-70 {
+  width: 70%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.hidden {
+  display: none;
+}
+
+.content-container {
+  height: 100vh;
+}
+
+.weather-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.weather-container #weather {
+  padding: 1rem;
+  color: #fff;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+}
+.clock-container #clock {
+  color: #fff;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.login-container .row {
+  display: flex;
+  justify-content: center;
+}
+.login-container .row .login-prompt {
+  color: #fff;
+  text-align: center;
+}
+.login-container .row #login-form {
+  border: 0;
+}
+.login-container .row #greeting {
+  text-align: center;
+  color: #fff;
+}
+
+.todo-container {
+  margin-top: 3em;
+}
+.todo-container .row {
+  display: flex;
+  justify-content: center;
+}
+.todo-container .row .todo-text {
+  text-align: center;
+  color: #fff;
+}
+.todo-container .row #js-todo-list {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.todo-container .row #js-todo-list li {
+  list-style: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.todo-container .row #js-todo-list li span {
+  width: 90%;
+  float: left;
+}
+.todo-container .row #js-todo-list li button {
+  width: fit-content;
+  height: fit-content;
+}
+
+.quote-container {
+  position: fixed;
+  bottom: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.quote-container .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.quote-container .row #quote {
+  color: #fff;
+  text-align: center;
+}
+
+/*# sourceMappingURL=main.css.map */
